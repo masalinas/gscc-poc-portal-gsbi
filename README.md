@@ -33,8 +33,10 @@ Update portal routes
 
 Update portal menu html 
 ```javascript
+...
     <li><a routerLink="/gsbi" routerLinkActive="active">GSBI Module (Lazy Load)</a></li>
     <li><a routerLink="/gspl" routerLinkActive="active">GSPL Module (Lazy Load)</a></li>
+...    
 ```
 
 ## commit module changes
