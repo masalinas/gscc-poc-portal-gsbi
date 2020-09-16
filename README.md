@@ -23,11 +23,18 @@ git submodule add https://github.com/masalinas/gscc-poc-module-gspl.git src/app/
 # Lazy load soft links modules from app-routing.module.ts
 Add Lazy load routing for the modules included:
 
+Update portal routes
 ```javascript
 ...
   { path: 'gsbi', loadChildren: () => import('./modules/gsbi/src/gsbi.module').then(m => m.GsbiModule) },
   { path: 'gspl', loadChildren: () => import('./modules/gspl/src/gspl.module').then(m => m.GsplModule) },
 ...
+```
+
+Update portal menu html 
+```javascript
+    <li><a routerLink="/gsbi" routerLinkActive="active">GSBI Module (Lazy Load)</a></li>
+    <li><a routerLink="/gspl" routerLinkActive="active">GSPL Module (Lazy Load)</a></li>
 ```
 
 ## commit module changes
