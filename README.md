@@ -1,5 +1,5 @@
 # Description
-Base Modular GSCC PoC using github Submodules
+Base Modular GSCC Portal using github Submodules
 
 This base portal implement:
 
@@ -8,6 +8,8 @@ This base portal implement:
 - Alarm management
 - User Profile Management
 - Module Management
+
+## Add modules in the base portal
 
 Go to the parent repository folder and pull modules
 ```bash
@@ -46,15 +48,15 @@ git commit -m 'parent commit'
 git push origin master
 ```
 
-## clone parent with all submodels
-Clone parent project and all submodels of the project
+## clone parent with all submodules
+Clone base portal and all submodules
 
 ```bash
 git clone --recurse-submodules https://github.com/masalinas/gscc-poc-parent.git
 ```
 
-## recursive pull all submodels changes
-Pull project and all submodels of the project and syncronize the parent project
+## recursive pull all submodules changes
+Pull portal and all submodules
 
 ```bash
 git pull --recurse-submodules
