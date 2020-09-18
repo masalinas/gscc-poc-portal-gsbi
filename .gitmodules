@@ -1,0 +1,3 @@
+[submodule "src/app/modules/gsbi"]
+	path = src/app/modules/gsbi
+	url = https://github.com/masalinas/gscc-poc-module-gsbi.git
