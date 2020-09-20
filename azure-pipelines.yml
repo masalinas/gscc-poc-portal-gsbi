@@ -22,4 +22,11 @@ steps:
     npm install -g @angular/cli
     npm install
     ng build --prod
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Evaluación gratuita(99d5fb51-af37-4e4e-9b2b-2d1a8a99c503)'
+    appType: 'webAppLinux'
+    WebAppName: 'gscc-poc-portal-gsbi'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
   displayName: 'npm install and build'
