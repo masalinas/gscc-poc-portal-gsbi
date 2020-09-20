@@ -22,3 +22,10 @@ steps:
     npm install -g @angular/cli
     npm install
     ng build --prod
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'dist/gscc-poc-portal-gsbi'
+    ArtifactName: 'web-app'
+    publishLocation: 'Container'
+  displayName: 'Publish Artifacts'
