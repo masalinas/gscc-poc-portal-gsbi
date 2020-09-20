@@ -28,5 +28,5 @@ steps:
     azureSubscription: 'Evaluación gratuita(99d5fb51-af37-4e4e-9b2b-2d1a8a99c503)'
     appType: 'webAppLinux'
     WebAppName: 'gscc-poc-portal-gsbi'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/gscc-poc-portal-gsbi/web-app'
   displayName: 'npm install and build'
